@@ -214,6 +214,8 @@
       <!---Descriptio--->
       <Description />
       <CourseComparation/>
+      <FrequentBought/>
+      <InstructorRating/>
     </div>
 
     <div class="col-span-4"></div>
@@ -225,6 +227,8 @@ import { ref } from "vue";
 import { DotIcon, BriefcaseIcon } from "lucide-vue-next";
 import Certefication from "./Certefication.vue";
 import CourseComparation from "./CourseComparation.vue";
+import FrequentBought from "./FrequentBought.vue";
+import InstructorRating from "./InstructorRating.vue";
 
 export default {
   data() {
