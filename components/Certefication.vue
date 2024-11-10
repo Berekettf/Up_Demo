@@ -14,7 +14,7 @@ import { Separator } from "@/components/ui/separator";
     <CardContent>
       <Separator class="my-4 " />
       <div class="space-y-4">
-       <span>Prepare for your certification with this course.<a class="text-red-600" href="#">Learn more</a></span>
+       <span>Prepare for your certification with this course.<a class="text-red-400" href="#">Learn more</a></span>
         <div class="grid gap-6">
           <div class="flex items-center justify-between space-x-4">
             <div class="flex items-center space-x-4">

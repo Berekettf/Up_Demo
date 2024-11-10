@@ -3,10 +3,10 @@
     <div
       class="scroll-area max-h-[500px] overflow-y-auto mt-4 mb-6 scrollbar-hidden col-span-8 px-12 border-r border-gray-200"
     >
-        <!--certificate-->
+      <!--certificate-->
 
-        <Certefication/>
-    
+      <Certefication />
+
       <div class="px-6 border border-gray-300 m-6 rounded-md">
         <h1
           class="font-semibold leading-tight tracking-normal max-w-screen-md"
@@ -117,13 +117,60 @@
           </div>
         </div>
         <div class="px-6">
-         
           <NuxtLink
             class="border border-gray-300 bg-slate-100 shadow-sm text-md py-3 px-2 inline-block w-full"
           >
-            <div class="flex justify-between items-center">
-              <h2>Bereket Wube</h2>
-              <span>4:00pm</span>
+            <div class="flex justify-between items-center px-3">
+              <h2>Introduction</h2>
+              <span>4 lectures.5min</span>
+            </div>
+          </NuxtLink>
+          <NuxtLink
+            class="border border-gray-300 bg-slate-100 shadow-sm text-md py-3 px-2 inline-block w-full"
+          >
+            <div class="flex justify-between items-center px-3">
+              <h2>Introduction</h2>
+              <span>4 lectures.5min</span>
+            </div>
+          </NuxtLink>
+          <NuxtLink
+            class="border border-gray-300 bg-slate-100 shadow-sm text-md py-3 px-2 inline-block w-full"
+          >
+            <div class="flex justify-between items-center px-3">
+              <h2>Introduction</h2>
+              <span>4 lectures.5min</span>
+            </div>
+          </NuxtLink>
+          <NuxtLink
+            class="border border-gray-300 bg-slate-100 shadow-sm text-md py-3 px-2 inline-block w-full"
+          >
+            <div class="flex justify-between items-center px-3">
+              <h2>Introduction</h2>
+              <span>4 lectures.5min</span>
+            </div>
+          </NuxtLink>
+          <NuxtLink
+            class="border border-gray-300 bg-slate-100 shadow-sm text-md py-3 px-2 inline-block w-full"
+          >
+            <div class="flex justify-between items-center px-3">
+              <h2>Introduction</h2>
+              <span>4 lectures.5min</span>
+            </div>
+          </NuxtLink>
+          <NuxtLink
+            class="border border-gray-300 bg-slate-100 shadow-sm text-md py-3 px-2 inline-block w-full"
+          >
+            <div class="flex justify-between items-center px-3">
+              <h2>Introduction</h2>
+              <span>4 lectures.5min</span>
+            </div>
+          </NuxtLink>
+          <NuxtLink
+            class="border border-gray-300 bg-slate-100 shadow-sm text-md py-3 px-2 inline-block w-full"
+          >
+            <div class="flex justify-between items-center px-3">
+              <h2>Introduction</h2>
+              <span>4 lectures.5min</span>
             </div>
           </NuxtLink>
           <NuxtLink
@@ -134,7 +181,11 @@
         </div>
       </div>
       <div class="component-margin px-6 py-3">
-        <h2 class="scroll-m-20 text-3xl font-semibold tracking-tight lg:text-3xl py-3">Requirements</h2>
+        <h2
+          class="scroll-m-20 text-3xl font-semibold tracking-tight lg:text-3xl py-3"
+        >
+          Requirements
+        </h2>
         <ul class="list-none space-y-4">
           <li class="flex items-center text-sm">
             <svg
@@ -161,8 +212,8 @@
         </ul>
       </div>
       <!---Descriptio--->
-      <Description/>
-      
+      <Description />
+      <CourseComparation/>
     </div>
 
     <div class="col-span-4"></div>
@@ -173,6 +224,7 @@
 import { ref } from "vue";
 import { DotIcon, BriefcaseIcon } from "lucide-vue-next";
 import Certefication from "./Certefication.vue";
+import CourseComparation from "./CourseComparation.vue";
 
 export default {
   data() {
@@ -187,15 +239,7 @@ export default {
       ],
     };
   },
-  setup() {
-    const tags = ref(
-      Array.from({ length: 11 }, (_, i) => ({
-        id: i + 1,
-        name: `name-${i + 1}`,
-      }))
-    );
-    return { tags };
-  },
+
 };
 </script>
 
@@ -211,6 +255,4 @@ svg {
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
   scrollbar-width: none; /* For Firefox */
 }
-
-
 </style>
