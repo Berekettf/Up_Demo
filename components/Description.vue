@@ -12,10 +12,10 @@
       
       <ul class="list-disc list-inside mt-2 space-y-1">
         <li>With our course, you will get practically trained on the important aspects of Google cloud.</li>
-        <li>Extensively gain knowledge over wide topics with easy to understand explanation.</li>
-        <li>Preparedness for Google cloud architect professional certification.</li>
-        <li>We offer certification-level practice exams to put your knowledge to the test as well.</li>
-        <li>As an add-on, we offer a complete module on 'HADOOP' which is our exclusive gift for you!!</li>
+        <li class="text-gray-700">Extensively gain knowledge over wide topics with easy to understand explanation.</li>
+        <li class="text-gray-600">Preparedness for Google cloud architect professional certification.</li>
+        <li class="text-gray-300">We offer certification-level practice exams to put your knowledge to the test as well.</li>
+        <li class="text-gray-200">As an add-on, we offer a complete module on 'HADOOP' which is our exclusive gift for you!!</li>
       </ul>
   
       <p class="mt-4 text-gray-500">Course Overview</p>
