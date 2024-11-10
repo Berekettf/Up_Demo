@@ -98,52 +98,29 @@
       <span class="hidden sm:block">
         <button
           type="button"
-          class="inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+          class="inline-flex items-center rounded-md bg-white border border-slate-700 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
         >
-          <svg
-            class="-ml-0.5 mr-1.5 h-5 w-5 text-gray-400"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <!-- Pencil icon path here -->
-          </svg>
-          Edit
+          Login
         </button>
       </span>
-      <span class="ml-3 hidden sm:block">
+      <span
+        class="ml-3 hidden sm:block bg-slate-600 text-white border border-slate-700"
+      >
         <button
           type="button"
-          class="inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+          class="inline-flex items-center px-1 rounded-md bg-gray-800 py-2 text-sm text-white font-semibold shadow-sm ring-1 ring-inset hover:bg-gray-50"
         >
-          <svg
-            class="-ml-0.5 mr-1.5 h-5 w-5 text-gray-400"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <!-- Link icon path here -->
-          </svg>
-          View
+          Sign Up
         </button>
       </span>
-      <span class="sm:ml-3">
+      <span
+        class="ml-3 hidden sm:block  border border-slate-700"
+      >
         <button
           type="button"
-          class="inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          class="inline-flex items-center px-1 rounded-md  py-2 text-sm text-black font-semibold shadow-sm ring-1 ring-inset"
         >
-          <svg
-            class="-ml-0.5 mr-1.5 h-5 w-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <!-- Check icon path here -->
-          </svg>
-          Publish
+          Lang
         </button>
       </span>
     </nav>

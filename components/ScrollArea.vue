@@ -1,43 +1,245 @@
 <template>
-    <div class="scroll-area h-screen w-full overflow-y-auto">
-      <NuxtLink
-        v-for="tag in tags"
-        :key="tag.id"
-        to="/dashboard/doctor/appointments/view/1"
-        class="border mb-2 border-gray-200 shadow-sm text-xs bg-white py-3 px-2 inline-block w-full rounded-md"
-      >
-        <div class="flex justify-between items-center pb-2">
-          <h2>Bereket Wube</h2>
-          <span>4:00pm</span>
+  <div class="grid grid-cols-12">
+    <div
+      class="scroll-area max-h-[500px] overflow-y-auto mt-4 mb-6 scrollbar-hidden col-span-8 px-12 border-r border-gray-200"
+    >
+      <div class="px-6 border border-gray-300 m-6 rounded-md">
+        <h1
+          class="font-semibold leading-tight tracking-normal max-w-screen-md"
+          style="
+            font-family: var(--font-stack-heading);
+            font-size: clamp(
+              1.8rem,
+              calc(1.8rem + (2.4 - 1.8) * ((100vw - 36rem) / (144 - 36))),
+              2.4rem
+            );
+          "
+        >
+          What you'll learn
+        </h1>
+        <div class="bg-gray-50 rounded-lg shadow">
+          <ul class="space-y-2 grid grid-cols-1 md:grid-cols-2 gap-1">
+            <li
+              v-for="(objective, index) in objectives"
+              :key="index"
+              class="flex items-start space-x-3"
+            >
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                class="w-5 h-5 text-green-500"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M9 16.17L4.83 12a1 1 0 10-1.41 1.41l5 5c.39.39 1.02.39 1.41 0l12-12a1 1 0 10-1.41-1.41L9 16.17z"
+                />
+              </svg>
+              <span class="text-gray-800 text-sm">{{ objective }}</span>
+            </li>
+          </ul>
         </div>
-        <div class="flex items-center gap-2">
-          <div class="flex items-center">
-            <DotIcon />
-            <span>Follow Up</span>
-          </div>
-          <div class="flex items-center">
-            <BriefcaseIcon class="w-4 h-4" />
-            <span>Exam</span>
+      </div>
+      <div class="px-6 border border-gray-300 m-6 rounded-md">
+        <h1
+          class="font-semibold leading-tight tracking-normal max-w-screen-md"
+          style="
+            font-family: var(--font-stack-heading);
+            font-size: clamp(
+              1.8rem,
+              calc(1.8rem + (2.4 - 1.8) * ((100vw - 36rem) / (144 - 36))),
+              2.4rem
+            );
+          "
+        >
+          What you'll learn
+        </h1>
+        <div class="bg-gray-50 rounded-lg shadow">
+          <ul class="space-y-2 grid grid-cols-1 md:grid-cols-2 gap-1">
+            <li
+              v-for="(objective, index) in objectives"
+              :key="index"
+              class="flex items-start space-x-3"
+            >
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                class="w-5 h-5 text-green-500"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M9 16.17L4.83 12a1 1 0 10-1.41 1.41l5 5c.39.39 1.02.39 1.41 0l12-12a1 1 0 10-1.41-1.41L9 16.17z"
+                />
+              </svg>
+              <span class="text-gray-800 text-sm">{{ objective }}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="p-6">
+          <h1
+            class="mb-4 scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-3xl"
+          >
+            Explore related topics
+          </h1>
+          <div class="container mx-auto px-4">
+            <ul
+              class="ud-unstyled-list pill-group-module--pill-group--q7hFg flex flex-wrap gap-4 mt-4"
+            >
+              <li class="pill-group-module--pill--4e6tF">
+                <a
+                  href="#"
+                  class="ud-btn ud-btn-large ud-btn-secondary ud-btn-round ud-heading-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded-full px-6 py-2"
+                >
+                  <span class="leading-7 [&:not(:first-child)]:mt-6"
+                    >Google Cloud</span
+                  >
+                </a>
+              </li>
+              <li class="pill-group-module--pill--4e6tF">
+                <a
+                  href="#"
+                  class="ud-btn ud-btn-large ud-btn-secondary ud-btn-round border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded-full px-6 py-2"
+                >
+                  <span class="leading-7 [&:not(:first-child)]:mt-6"
+                    >Google Cloud Professional Cloud Architect</span
+                  >
+                </a>
+              </li>
+              <li class="pill-group-module--pill--4e6tF">
+                <a
+                  href="#"
+                  class="border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded-full px-6 py-2"
+                >
+                  <span class="leading-7 [&:not(:first-child)]:mt-6"
+                    >IT Certifications</span
+                  >
+                </a>
+              </li>
+              <li class="pill-group-module--pill--4e6tF">
+                <a
+                  href="#"
+                  class="ud-btn ud-btn-large ud-btn-secondary ud-btn-round ud-heading-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded-full px-6 py-2"
+                >
+                  <span class="leading-7 [&:not(:first-child)]:mt-6"
+                    >IT & Software</span
+                  >
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </NuxtLink>
+      </div>
+      <div>
+        <div class="p-6">
+          <h1
+            class="mb-4 scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-3xl"
+          >
+            Course content
+          </h1>
+          <div class="flex items-center justify-between">
+            <div class="">
+              <span class="text-gray-800 text-sm">
+                <span>13 sections</span> • <span>43 lectures</span> •
+                <span><span>3h&nbsp;6m</span> total length</span>
+              </span>
+            </div>
+            <a href="#"><span>Expand all sections</span></a>
+          </div>
+        </div>
+        <div class="px-6">
+          <NuxtLink
+            v-for="tag in tags"
+            :key="tag.id"
+            to="#"
+            class="border border-gray-300 bg-slate-100 shadow-sm text-md py-3 px-2 inline-block w-full"
+          >
+            <div class="flex justify-between items-center">
+              <h2>Bereket Wube</h2>
+              <span>4:00pm</span>
+            </div>
+          </NuxtLink>
+          <NuxtLink
+            class="mt-2 mb-4 font-bold border border-gray-500 shadow-sm text-md py-3 px-2 inline-flex items-center justify-center w-full"
+          >
+            <span>3 more Sections</span>
+          </NuxtLink>
+        </div>
+      </div>
+      <div class="component-margin px-6 py-3">
+        <h2 class="scroll-m-20 text-3xl font-semibold tracking-tight lg:text-3xl py-3">Requirements</h2>
+        <ul class="list-none space-y-4">
+          <li class="flex items-center text-sm">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              class="h-4 w-4 mr-2 text-gray-500"
+              fill="currentColor"
+            >
+              <circle cx="8" cy="8" r="4"></circle>
+            </svg>
+            <div class="text-gray-700">Basic understanding of technology</div>
+          </li>
+          <li class="flex items-center text-sm">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              class="h-4 w-4 mr-2 text-gray-500"
+              fill="currentColor"
+            >
+              <circle cx="8" cy="8" r="4"></circle>
+            </svg>
+            <div class="text-gray-700">Basic computer skills</div>
+          </li>
+        </ul>
+      </div>
     </div>
-  </template>
-  
-  <script setup>
-  import { ref } from 'vue'
-  import { DotIcon, BriefcaseIcon } from 'lucide-vue-next'
-  
-  const tags = ref(Array.from({ length: 50 }, (_, i) => ({
-    id: i + 1,
-    name: `name-${i + 1}`,
-  })))
-  </script>
-  
-  <style scoped>
-  .scroll-area {
-    /* Additional styling for the scroll area */
-    overflow-y: auto;
-  }
-  </style>
-  
+
+    <div class="col-span-4"></div>
+  </div>
+</template>
+
+<script>
+import { ref } from "vue";
+import { DotIcon, BriefcaseIcon } from "lucide-vue-next";
+
+export default {
+  data() {
+    return {
+      objectives: [
+        "Deploy Managed Hadoop apps on the Google Cloud",
+        "Make informed decisions about Containers, VMs and AppEngine",
+        "Understand overall architecture and working of Google Cloud",
+        "Gain ability to work on GCP practically",
+        "Preparedness for cloud architect professional exam",
+        "Practice exam of exam standard",
+      ],
+    };
+  },
+  setup() {
+    const tags = ref(
+      Array.from({ length: 11 }, (_, i) => ({
+        id: i + 1,
+        name: `name-${i + 1}`,
+      }))
+    );
+    return { tags };
+  },
+};
+</script>
+
+<style scoped>
+svg {
+  fill: currentColor;
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
+</style>

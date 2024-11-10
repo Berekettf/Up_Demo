@@ -3,6 +3,5 @@
 
 <template>
   <Hero/>
-  <Last/>
-  
+  <ScrollArea/> 
 </template>
