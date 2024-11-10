@@ -3,43 +3,10 @@
     <div
       class="scroll-area max-h-[500px] overflow-y-auto mt-4 mb-6 scrollbar-hidden col-span-8 px-12 border-r border-gray-200"
     >
-      <div class="px-6 border border-gray-300 m-6 rounded-md">
-        <h1
-          class="font-semibold leading-tight tracking-normal max-w-screen-md"
-          style="
-            font-family: var(--font-stack-heading);
-            font-size: clamp(
-              1.8rem,
-              calc(1.8rem + (2.4 - 1.8) * ((100vw - 36rem) / (144 - 36))),
-              2.4rem
-            );
-          "
-        >
-          What you'll learn
-        </h1>
-        <div class="bg-gray-50 rounded-lg shadow">
-          <ul class="space-y-2 grid grid-cols-1 md:grid-cols-2 gap-1">
-            <li
-              v-for="(objective, index) in objectives"
-              :key="index"
-              class="flex items-start space-x-3"
-            >
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                class="w-5 h-5 text-green-500"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M9 16.17L4.83 12a1 1 0 10-1.41 1.41l5 5c.39.39 1.02.39 1.41 0l12-12a1 1 0 10-1.41-1.41L9 16.17z"
-                />
-              </svg>
-              <span class="text-gray-800 text-sm">{{ objective }}</span>
-            </li>
-          </ul>
-        </div>
-      </div>
+        <!--certificate-->
+
+        <Certefication/>
+    
       <div class="px-6 border border-gray-300 m-6 rounded-md">
         <h1
           class="font-semibold leading-tight tracking-normal max-w-screen-md"
@@ -150,10 +117,8 @@
           </div>
         </div>
         <div class="px-6">
+         
           <NuxtLink
-            v-for="tag in tags"
-            :key="tag.id"
-            to="#"
             class="border border-gray-300 bg-slate-100 shadow-sm text-md py-3 px-2 inline-block w-full"
           >
             <div class="flex justify-between items-center">
@@ -195,6 +160,9 @@
           </li>
         </ul>
       </div>
+      <!---review section--->
+      <Review/>
+      
     </div>
 
     <div class="col-span-4"></div>
@@ -204,6 +172,7 @@
 <script>
 import { ref } from "vue";
 import { DotIcon, BriefcaseIcon } from "lucide-vue-next";
+import Certefication from "./Certefication.vue";
 
 export default {
   data() {
@@ -242,4 +211,6 @@ svg {
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
   scrollbar-width: none; /* For Firefox */
 }
+
+
 </style>
