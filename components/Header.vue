@@ -108,7 +108,7 @@
       >
         <button
           type="button"
-          class="inline-flex items-center px-1 rounded-md bg-gray-800 py-2 text-sm text-white font-semibold shadow-sm ring-1 ring-inset hover:bg-gray-50"
+          class="inline-flex items-center px-1 rounded-md bg-gray-800 py-2 text-sm text-white font-semibold shadow-sm"
         >
           Sign Up
         </button>
