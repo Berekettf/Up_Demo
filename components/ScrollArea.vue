@@ -50,7 +50,7 @@
       </div>
     </div>
   </div>
-  <div ref="footer" class="mt-20 p-4 bg-slate-900 text-white">
+  <div ref="footer" class="bg-slate-800 dark:bg-gray-900">
   </div>
 </template>
 
