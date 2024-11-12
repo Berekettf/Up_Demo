@@ -22,6 +22,7 @@
     "lucide-vue-next": "^0.456.0",
     "mongoose": "^8.8.1",
     "nuxt": "^3.14.159",
+    "nuxt-seo-module": "^1.0.0",
     "radix-vue": "^1.9.9",
     "shadcn-nuxt": "^0.11.2",
     "tailwind-merge": "^2.5.4",

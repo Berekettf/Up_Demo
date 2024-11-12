@@ -1,12 +1,5 @@
 
 <script>
-import { ref } from "vue";
-import { DotIcon, BriefcaseIcon } from "lucide-vue-next";
-import Certefication from "./Certefication.vue";
-import CourseComparation from "./CourseComparation.vue";
-import FrequentBought from "./FrequentBought.vue";
-import InstructorRating from "./InstructorRating.vue";
-
 export default {
   data() {
     return {
@@ -38,9 +31,9 @@ svg {
 }
 </style>
 <template>
-    <div class="px-6 border border-gray-300 m-6 rounded-md">
+    <div class="px-6 border border-gray-300 m-6 rounded-md py-3">
         <h1
-          class="font-semibold leading-tight tracking-normal max-w-screen-md"
+          class="font-semibold leading-tight tracking-normal max-w-screen-md text-md pb-3"
           style="
             font-family: var(--font-stack-heading);
             font-size: clamp(
@@ -52,7 +45,7 @@ svg {
         >
           What you'll learn
         </h1>
-        <div class="bg-gray-50 rounded-lg shadow">
+        <div class=" rounded-lg shadow">
           <ul class="space-y-2 grid grid-cols-1 md:grid-cols-2 gap-1">
             <li
               v-for="(objective, index) in objectives"
@@ -62,7 +55,7 @@ svg {
               <svg
                 aria-hidden="true"
                 focusable="false"
-                class="w-5 h-5 text-green-500"
+                class="w-5 h-5 text-slate-800"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
