@@ -13,6 +13,7 @@
   "dependencies": {
     "@heroicons/react": "^2.1.5",
     "@heroicons/vue": "^2.1.5",
+    "@nuxt/image": "^1.8.1",
     "@nuxtjs/color-mode": "^3.0.0",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@radix-icons/vue": "^1.0.0",

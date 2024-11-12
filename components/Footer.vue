@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-slate-900 dark:bg-gray-900 text-white">
+  <footer ref="footer" class="bg-slate-900 dark:bg-gray-900 text-white">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
       <div class="sm:flex sm:items-center sm:justify-between">
         <h3 class="scroll-m-20 text-lg font-extrabold tracking-tight lg:text-2xl">Top companies choose Udemy Business to build in-demand career skills.</h3>

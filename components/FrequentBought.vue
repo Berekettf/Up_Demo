@@ -7,14 +7,14 @@ import {
 </script>
 
 <template>
-  <div class="space-y-8 mt-6 border border-gray-300 p-4 ">
+  <div class="space-y-8 mt-6 border border-gray-300 px-6 py-4 ">
     <h1 class="scroll-m-20 text-md font-bold tracking-tight lg:text-3xl">
         Frequently Bought Together
     </h1>
     <div class="flex items-center justify-between col-span-12 ">
-      <div class="flex items-center justify-between col-span-8 gap-10">
-        <Avatar class="h-9 w-9">
-          <AvatarImage src="/public/avatar1.png" alt="Avatar" />
+      <div class="flex items-center justify-between col-span-8 gap-3">
+        <Avatar class="h-20 w-20">
+          <AvatarImage src="/avatar1.png" alt="Avatar" />
           <AvatarFallback>OM</AvatarFallback>
         </Avatar>
         <div class="ml-4 space-y-1">
@@ -34,9 +34,9 @@ import {
       </div>
     </div>
     <div class="flex items-center justify-between col-span-12 ">
-      <div class="flex items-center justify-between col-span-8 gap-10">
-        <Avatar class="h-9 w-9">
-          <AvatarImage src="/public/avatar1.png" alt="Avatar" />
+      <div class="flex items-center justify-between col-span-8 gap-3">
+        <Avatar class="h-20 w-20">
+          <AvatarImage src="/avatar1.png" alt="Avatar" />
           <AvatarFallback>OM</AvatarFallback>
         </Avatar>
         <div class="ml-4 space-y-1">
@@ -56,9 +56,9 @@ import {
       </div>
     </div>
     <div class="flex items-center justify-between col-span-12 ">
-      <div class="flex items-center justify-between col-span-8 gap-10">
-        <Avatar class="h-9 w-9">
-          <AvatarImage src="/public/avatar1.png" alt="Avatar" />
+      <div class="flex items-center justify-between col-span-8 gap-3">
+        <Avatar class="h-20 w-20">
+          <AvatarImage src="/avatar1.png" alt="Avatar" />
           <AvatarFallback>OM</AvatarFallback>
         </Avatar>
         <div class="ml-4 space-y-1">
@@ -78,9 +78,9 @@ import {
       </div>
     </div>
     <div class="flex items-center justify-between col-span-12 ">
-      <div class="flex items-center justify-between col-span-8 gap-10">
-        <Avatar class="h-9 w-9">
-          <AvatarImage src="https://img-c.udemycdn.com/user/200_H/43253346_0b0b_2.jpg" alt="Avatar" />
+      <div class="flex items-center justify-between col-span-8 gap-3">
+        <Avatar class="h-20 w-20">
+          <AvatarImage src="/avatar1.png" alt="Avatar" />
           <AvatarFallback>OM</AvatarFallback>
         </Avatar>
         <div class="ml-4 space-y-1">

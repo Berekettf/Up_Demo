@@ -33,15 +33,8 @@ svg {
 <template>
     <div class="px-6 border border-gray-300 m-6 rounded-md py-3">
         <h1
-          class="font-semibold leading-tight tracking-normal max-w-screen-md text-md pb-3"
-          style="
-            font-family: var(--font-stack-heading);
-            font-size: clamp(
-              1.8rem,
-              calc(1.8rem + (2.4 - 1.8) * ((100vw - 36rem) / (144 - 36))),
-              2.4rem
-            );
-          "
+          class="font-bold leading-tight tracking-normal max-w-screen-md text-2xl pb-3"
+          
         >
           What you'll learn
         </h1>
